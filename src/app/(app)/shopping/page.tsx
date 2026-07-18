@@ -41,7 +41,7 @@ export default function ShoppingPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  function eventName(id: string) {
+  function eventName(id: string | null) {
     return events.find((e) => e.id === id)?.name ?? "—";
   }
   function profileName(id: string | null) {
