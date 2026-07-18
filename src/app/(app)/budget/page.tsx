@@ -36,7 +36,7 @@ export default function BudgetPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  function eventName(id: string) {
+  function eventName(id: string | null) {
     return events.find((e) => e.id === id)?.name ?? "—";
   }
 
